@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  localdb:
+    container_name: localdb
+    image: postgres:12.4
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: patentfetcherdbuser
+      POSTGRES_DB: patentfetcherdb
+    privileged: true
+
+volumes:
+  postgres_data:

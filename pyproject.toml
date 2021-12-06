@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "patentfetcher"
+version = "0.1.0"
+description = ""
+authors = ["Sergio Perez <serpear@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Flask = "^2.0.2"
+Flask-SQLAlchemy = "^2.5.1"
+requests = "^2.26.0"
+tqdm = "^4.62.3"
+psycopg2-binary = "^2.9.2"
+Flask-Migrate = "^3.1.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.11b1"
+flask-shell-bpython = "^1.0.2"
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
