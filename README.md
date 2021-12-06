@@ -11,7 +11,7 @@ make dev
 2. Run migrations
 
 ```bash
-make dev
+make migrate
 ```
 
 3. Run an example command
