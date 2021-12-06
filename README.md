@@ -39,7 +39,7 @@ are complete documents (patent body text) or the way the data is queried probabl
 like a document db.
 - For the adapters the suffix acl was used which stands for anti-corruption layer. It was done as a way to mark that
 data from an external source comes into the application and it's adapted to the domain.
-- Only one test was written for the Command Controller. The following tests that would be written are:
+- Only one test was written for the Command Controller. The following tests are important and they'd be written next:
   - for the http_patent_acl_adapter since this adapter includes the patent download progress logging and
   the mapping from the external USPTO data source to the domain of the patent fetcher application.
   - for the sqlalchemy_patent_repository since it maps from the domain objects to the data store entities.
